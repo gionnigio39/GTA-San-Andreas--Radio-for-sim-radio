@@ -1,0 +1,126 @@
+{
+  "tag": "Radio Los Santos",
+  "info": {
+    "title": "Radio Los Santos",
+    "genre": "Hip hop moderno",
+    "logo": "logo.png",
+    "dj": "DJ: Julio G"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        },
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        }        
+      ]
+    },
+    {
+      "tag": "general",
+      "files": [
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        },
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        },
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        }
+      ]
+    },
+    {
+      "tag": "mixin",
+      "files": [
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        },
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        },
+        {
+          "path": "Radio Los Santos.m4a",
+          "duration": 3863
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "general"
+    },
+    "fragments": [
+      {
+        "tag": "general",
+        "src": {
+          "type": "group",
+          "groupTag": "general"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      },
+      {
+        "tag": "track",
+        "src": {
+          "type": "group",
+          "groupTag": "track"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "general",
+            "probability": 0.333
+          },
+          {
+            "fragmentTag": "track"
+          }
+        ],
+        "mixins": {
+          "pos": [
+            {
+              "tag": "begin",
+              "relativeOffset": 0.03
+            },
+            {
+              "tag": "end",
+              "relativeOffset": 0.97
+            }
+          ],
+          "mix": [
+            {
+              "tag": "mixins",
+              "src": {
+                "type": "group",
+                "groupTag": "mixin"
+              },
+              "condition": {
+                "type": "random",
+                "probability": 0.9
+              },
+              "posVariant": [
+                {
+                  "posTag": "end"
+                },
+                {
+                  "posTag": "begin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

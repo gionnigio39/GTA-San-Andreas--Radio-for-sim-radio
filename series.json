@@ -1,0 +1,44 @@
+{
+    "info": {
+        "title": "GTA San Andreas Radio",
+        "logo": "logo.png"
+    },
+    "common": {
+        "fileGroups": []
+    },
+    "stations": [
+        {
+            "path": "Bounce FM"
+        },
+		{
+            "path": "CSR 103.9"
+        },
+		{
+            "path": "K-DST"
+        },
+		{
+            "path": "K-Jah Radio West"
+        },
+		{
+            "path": "K-Rose"
+        },
+		{
+            "path": "Master Sounds 98.3"
+        },
+		{
+            "path": "Playback FM"
+        },
+		{
+            "path": "Radio Los Santos"
+        },
+		{
+            "path": "Radio X The Alternative"
+        },
+		{
+            "path": "SF-UR"
+        },
+		{
+            "path": "West Coast Talk Radio"
+        }
+    ]
+}

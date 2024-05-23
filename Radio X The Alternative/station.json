@@ -1,0 +1,126 @@
+{
+  "tag": "Radio X The Alternative",
+  "info": {
+    "title": "Radio X The Alternative",
+    "genre": "Rock moderno",
+    "logo": "logo.png",
+    "dj": "DJ: Sage"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        },
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        }        
+      ]
+    },
+    {
+      "tag": "general",
+      "files": [
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        },
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        },
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        }
+      ]
+    },
+    {
+      "tag": "mixin",
+      "files": [
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        },
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        },
+        {
+          "path": "Radio X The Alternative.m4a",
+          "duration": 3469
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "general"
+    },
+    "fragments": [
+      {
+        "tag": "general",
+        "src": {
+          "type": "group",
+          "groupTag": "general"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      },
+      {
+        "tag": "track",
+        "src": {
+          "type": "group",
+          "groupTag": "track"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "general",
+            "probability": 0.333
+          },
+          {
+            "fragmentTag": "track"
+          }
+        ],
+        "mixins": {
+          "pos": [
+            {
+              "tag": "begin",
+              "relativeOffset": 0.03
+            },
+            {
+              "tag": "end",
+              "relativeOffset": 0.97
+            }
+          ],
+          "mix": [
+            {
+              "tag": "mixins",
+              "src": {
+                "type": "group",
+                "groupTag": "mixin"
+              },
+              "condition": {
+                "type": "random",
+                "probability": 0.9
+              },
+              "posVariant": [
+                {
+                  "posTag": "end"
+                },
+                {
+                  "posTag": "begin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
